@@ -32,7 +32,7 @@ input_text = st.text_input("What Symptom are you having?")
 
 
 # Load the saved model
-model = load_model('nn_disease_detection.h5')
+model = load_model('n_disease_detection.h5')
 
 
 
