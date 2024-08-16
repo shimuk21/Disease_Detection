@@ -32,12 +32,12 @@ input_text = st.text_input("What Symptom are you having?")
 
 
 # Load the saved model
-model = load_model(r'C:\Users\shimu\1_1_Research\nn_disease_detection.h5')
+model = load_model('nn_disease_detection.h5')
 
 
 
-label_encoder = joblib.load(r'C:\Users\shimu\1_1_Research\label_encoder.pkl')
-tfidf = joblib.load(r'C:\Users\shimu\1_1_Research\tfidf_vectorizer.pkl')
+label_encoder = joblib.load('label_encoder.pkl')
+tfidf = joblib.load('tfidf_vectorizer.pkl')
 
 
 
