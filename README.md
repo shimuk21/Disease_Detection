@@ -1,5 +1,5 @@
-#Disease Prediction
-##Introduction
+# Disease Prediction
+## Introduction
 
 This repository hosts a machine learning project focused on disease prediction based on textual descriptions of patients' symptoms. The primary objective of this project is to accurately identify diseases by analyzing symptoms provided in text form. Disease prediction has significant applications in healthcare, particularly in early diagnosis and personalized medicine, where timely and accurate identification of conditions can lead to better treatment outcomes.
 Project Overview
