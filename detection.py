@@ -60,7 +60,7 @@ def removeApostrophe(x):
 
 
 def removeHTMLTags(x):
-    soup = BeautifulSoup(x, 'lxml')
+    soup = BeautifulSoup(x, 'html.parser')
     return soup.get_text()
 
 
