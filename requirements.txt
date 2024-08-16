@@ -1,0 +1,7 @@
+streamlit
+tensorflow
+beautifulsoup4
+numpy
+keras
+joblib
+nltk
