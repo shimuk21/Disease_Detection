@@ -1,0 +1,12 @@
+tensorflow
+beautifulsoup4
+numpy
+lxml
+keras
+joblib
+nltk
+gunicorn
+Werkzeug
+Jinja2
+itsdangerous
+MarkupSafe
