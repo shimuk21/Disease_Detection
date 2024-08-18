@@ -1,8 +1,0 @@
-web: gunicorn app:app
-
-
-gunicorn
-Werkzeug
-Jinja2
-itsdangerous
-MarkupSafe
