@@ -1,9 +1,0 @@
-streamlit
-tensorflow
-scikit-learn
-beautifulsoup4
-lxml
-numpy
-keras
-joblib
-nltk
