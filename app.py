@@ -88,8 +88,8 @@ def home():
         model_output = model.predict(dense_input)
         predicted_class_index = np.argmax(model_output, axis=1)[0]
         predicted_label = label_encoder.inverse_transform([predicted_class_index])
-        return render_template('home.html', data=predicted_label)
-    return render_template('home.html', data=None)
+        return render_template('after.html', data=predicted_label)
+   # return render_template('home.html', data=None)
 
 
 if __name__ == "__main__":
