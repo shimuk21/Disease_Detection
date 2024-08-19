@@ -57,7 +57,7 @@ def dostemming(x):
     porter = PorterStemmer()
     if type(x) == type(''):
         x = porter.stem(x)
-        example1 = BeautifulSoup(x)
+        example1 = BeautifulSoup(x, features="lxml")
         x = example1.get_text()
       
     return x
