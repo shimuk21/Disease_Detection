@@ -80,32 +80,16 @@ def man():
 
 @app.route('/predict', methods=['POST'])
 def home():
-    data1 = request.form['a']
-    # data2 = request.form['b']
-    # data3 = request.form['c']
-    # data4 = request.form['d']
-    # arr = np.array([[data1, data2, data3, data4]])
-
-    processed_text = preprocess_text(data1)
-
-
-    # Transform the processed text using the TfidfVectorizer
-    text_count_3 = tfidf.transform([processed_text])
-
-    dense_input = text_count_3.toarray()
-
-    # Predict using the model
-    model_output = model.predict(dense_input)
-
-
-    # Get the predicted class
-    predicted_class_index = np.argmax(model_output, axis=1)[0]
-    predicted_label = label_encoder.inverse_transform([predicted_class_index])
-
-
-
-    # pred = model.predict(arr)
-    return render_template('after.html', data=predicted_label)
+    if request.method == 'POST':
+        data1 = request.form['a']
+        processed_text = preprocess_text(data1)
+        text_count_3 = tfidf.transform([processed_text])
+        dense_input = text_count_3.toarray()
+        model_output = model.predict(dense_input)
+        predicted_class_index = np.argmax(model_output, axis=1)[0]
+        predicted_label = label_encoder.inverse_transform([predicted_class_index])
+        return render_template('home.html', data=predicted_label)
+    return render_template('home.html', data=None)
 
 
 if __name__ == "__main__":
