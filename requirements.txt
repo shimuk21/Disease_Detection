@@ -1,5 +1,6 @@
 tensorflow
 beautifulsoup4
+flask
 numpy
 lxml
 keras
