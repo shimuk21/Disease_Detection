@@ -1,4 +1,5 @@
 tensorflow
+scikit-learn
 beautifulsoup4
 flask
 numpy
