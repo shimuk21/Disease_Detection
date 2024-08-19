@@ -1,16 +1,21 @@
 <html>
     <body bgcolor=#d4a3ae>
 
-        <center>
-
-        <h1> Disease Detection </h1><br>
+    <div class="container">
+        <h1>Disease Detection</h1><br>
         
-        <form method="POST", action="{{url_for('home')}}">
-           <b> First value :  <input type="text", name='a', placeholder="Enter Symptoms"> <br><br>
-            <input type="submit" , value='predict!' >
+        <form method="POST" action="{{ url_for('home') }}">
+            <b>Symptoms: </b> <input type="text" name="a" placeholder="Enter Symptoms"> <br><br>
+            <input type="submit" value="Predict!">
         </form>
         
-    </center>
+        {% if data %}
+        <div class="result-container">
+            <h2>Prediction Result</h2>
+            <p>The predicted disease is: <strong>{{ data[0] }}</strong></p>
+        </div>
+        {% endif %}
+    </div>
 
-    </body>
+</body>
 </html>
